@@ -1,0 +1,17 @@
+def inverse_dict(d):
+
+    inverse = {}
+
+    for key in d:
+
+        val = d[key]
+
+        #inverse.setdefault(val,[]).append(key)
+
+	inverse.setdefault(val,key)
+    return inverse
+
+d = dict(a=1,b=2,c=3,d=4)
+
+print(inverse_dict(d))
+    
