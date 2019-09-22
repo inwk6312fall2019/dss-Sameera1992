@@ -1,0 +1,56 @@
+def most_frequent(string):
+
+    t = {}
+
+    for word in string:
+
+        t[word] = t.get(word,0)+1
+
+    print("dict of frequency:\n")
+
+    print(t)
+
+    print("\n")
+
+    return t
+ 
+def reverse():
+   
+    t = most_frequent("Sameera")
+ 
+    lst = []
+
+    for word,freq in t.items():
+
+        lst.append((freq,word))
+
+    print("list of reverse tuples:\n")
+
+    print(lst)
+
+    print("\n")
+
+    lst.sort(reverse = True)
+
+    print("list of tuples sorted in descending order:\n")
+
+    print(lst)
+
+    print("\n")
+
+    res = []
+
+    for freq,word in lst:
+
+        res.append(word)
+
+    print("Finally only words:\n")
+
+    print(res)
+
+    print("\n")
+
+    return res
+
+reverse()
+

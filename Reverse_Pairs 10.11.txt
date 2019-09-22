@@ -1,0 +1,34 @@
+def reverse_pairs(w1,w2):
+
+    lenw2 = len(w2)-1
+
+    new = []
+
+    new1 = []
+
+    for i in range(len(w1)):
+
+        if w1[i] == w2[lenw2]:
+
+            new.append(w1[i])
+
+            new1.append(w2[i])
+
+            lenw2 = lenw2-1
+
+    print(new)
+
+    print(new1)
+
+    print ("are reverse pairs")
+
+    #return new1
+
+w1 = "sam"
+
+w2 = "mas"
+
+reverse_pairs(w1,w2)
+
+            
+        
