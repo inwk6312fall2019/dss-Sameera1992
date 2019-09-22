@@ -1,0 +1,23 @@
+import math
+
+def check_fermat():
+
+    a = int(input("enter number1: "))
+
+    b = int(input("enter number2: "))
+
+    c = int(input("enter number3: "))
+
+    n = int(input("enter number4: "))
+
+    if n>2 & ((a**n)+(b**n))==(c**n):
+
+        print("Holy Smokes, Fermat was wrong")
+
+    else:
+
+        print("No, that doesn't work.")
+
+check_fermat()
+
+    

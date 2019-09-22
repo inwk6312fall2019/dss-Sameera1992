@@ -1,0 +1,29 @@
+def do_twice(f):
+
+    f()
+
+    f()
+
+def do_four(f):
+
+    do_twice(f)
+
+    do_twice(f)
+
+def beams():
+
+    print("+----+----+")
+
+def poles():
+
+    print("|    |    |")
+
+def sqr():
+
+    beams()
+
+    do_four(poles)
+
+do_twice(sqr)
+
+beams()

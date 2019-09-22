@@ -1,0 +1,11 @@
+def appending(name):
+    if len(name)>3:
+        if name[-3:] != "ing":
+            print(name+"ing")
+        else:
+            print(name+"ly")
+            
+    else:
+        print(name)
+            
+appending("Humming")

@@ -1,0 +1,11 @@
+def count():
+
+    name = input("Enter a string: ")
+
+    letter = input("Enter the substring: ")
+
+    cnt = name.count(letter)
+
+    print("Count of substring '" +str(letter) +"' in string '" +str(name) +"' is " +str(cnt))
+
+count()

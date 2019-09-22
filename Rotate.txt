@@ -1,0 +1,37 @@
+def rot_let(letter,n):
+
+    if letter.isupper():
+
+        start = ord("A")
+
+    elif letter.islower():
+
+        start = ord("a")
+
+    else:
+
+        start = ord(letter)
+
+    letter_char = ord(letter)
+
+    diff = start + ((letter_char - start)+n)%26
+
+    return chr(diff)
+
+
+
+def rotateword(word, n):
+
+    newword = ""
+
+    for letter in word:
+
+        new_letter = rot_let(letter,n)
+
+        newword=newword+new_letter
+
+    return newword
+
+
+print(rotateword("cheer", 7))
+    
