@@ -1,0 +1,16 @@
+def words_as_keys():
+
+    file = open("words.txt","r")
+
+    word_dict = dict()
+
+    for line in file:
+
+        word = line.strip()
+
+        word_dict[word] = word
+
+    return word_dict
+
+
+print(words_as_keys())
